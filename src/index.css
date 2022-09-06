@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .overlay { @apply bg-gradient-to-r from-purple-200 to-sky-200 }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
