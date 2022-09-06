@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../../assets/images/DSC_1825.jpg";
+import pic from "../../assets/images/techstack.png";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, desc }) => (
@@ -12,7 +12,7 @@ const ProjectCard = ({ title, desc }) => (
       <p className="mt-4">{desc}</p>
       <Link
         to={`/projects/${title}`}
-        className="block w-2/4 mx-auto text-center py-2 px-4 bg-black text-white my-4 rounded-md hover:scale-105 transition-all"
+        className="block w-2/4 mx-auto text-center py-2 px-4 bg-black text-white my-4 rounded-3xl hover:scale-105 transition-all"
       >
         View Project
       </Link>

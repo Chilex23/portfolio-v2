@@ -16,9 +16,9 @@ const Contact = () => (
         </div>
         <div className="grid grid-cols-form">
           <label className="font-bold mr-3">Message :</label>
-          <textarea className="border-2 border-stone-800 w-full p-2 rounded-sm"></textarea>
+          <textarea className="border-2 border-stone-800 w-full p-2 rounded-sm h-32"></textarea>
         </div>
-        <button className="block py-4 px-20 bg-black text-white mx-auto my-4 text-center rounded-md mt-8 hover:scale-105 transition-all">
+        <button className="block py-4 px-20 bg-black text-white mx-auto my-4 text-center rounded-3xl mt-8 hover:scale-105 transition-all">
           Send!
         </button>
       </form>

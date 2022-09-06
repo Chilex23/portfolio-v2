@@ -13,7 +13,7 @@ const ProjectDetails = () => {
       <div className="flex justify-center mb-5 gap-x-10">
         <div>
           <h2 className="text-xl font-medium text-center">Stack</h2>
-          <div className="flex gap-x-4">
+          <div className="flex gap-x-4 mt-4">
             <p>CSS</p>
             <p>Bootstrap</p>
             <p>Python</p>
@@ -22,7 +22,7 @@ const ProjectDetails = () => {
         </div>
         <div>
           <h2 className="text-xl font-medium text-center">Links</h2>
-          <div className="flex gap-x-4">
+          <div className="flex gap-x-4 mt-4">
             <p className="cursor-pointer underline underline-offset-4">
               View Live Site
             </p>

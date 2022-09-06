@@ -2,7 +2,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
 }
 
-.glow {
+.heading {
   background: transparent;
   color: white;
   text-shadow: 0 1px hsl(0, 0%, 85%),

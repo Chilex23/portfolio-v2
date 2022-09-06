@@ -10,7 +10,7 @@ const Projects = () => (
         <ProjectCard title={project.title} desc={project.desc} />
       ))}
     </div>
-    <button className="block py-2 px-4 bg-black text-white mx-auto my-4 text-center rounded-md mt-8">
+    <button className="block py-3 hover:scale-105 transition-all px-10 bg-black text-white mx-auto my-4 text-center rounded-3xl mt-8">
       View More
     </button>
   </section>
