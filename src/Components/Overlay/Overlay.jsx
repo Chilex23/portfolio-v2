@@ -1,7 +1,7 @@
 import React from "react";
 
 const Overlay = () => (
-    <div className="overlay h-32 absolute top-0 w-full blur-lg">
+    <div className="overlay h-screen absolute top-0 w-full blur-lg -z-10">
         &nbsp;
     </div>
 );

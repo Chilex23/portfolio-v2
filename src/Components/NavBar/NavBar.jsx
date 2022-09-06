@@ -1,7 +1,7 @@
 import React from "react";
 
 const NavBar = () => (
-  <header className="px-10 py-5 relative z-10">
+  <header className="px-20 py-5 relative z-10 font-semibold">
     <nav className="flex justify-between">
       <div>Chilex</div>
 
