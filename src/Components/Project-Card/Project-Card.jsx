@@ -3,11 +3,11 @@ import pic from "../../assets/images/DSC_1825.jpg";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, desc }) => (
-  <div className="overflow-hidden rounded-lg border-stone-800 border-[1px]">
+  <div className="overflow-hidden rounded-bl-lg rounded-t-lg border-stone-800 border-l-2 border-b-2">
     <figure>
       <img src={pic} alt="project" />
     </figure>
-    <div className="p-2">
+    <div className="p-4">
       <h1 className="text-2xl font-medium mt-5 uppercase">{title}</h1>
       <p className="mt-4">{desc}</p>
       <Link
