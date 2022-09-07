@@ -1,5 +1,7 @@
 import React from "react";
 import pic from "../../assets/images/DSC_1825.jpg";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 const CTA = () => (
   <>
@@ -15,8 +17,8 @@ const CTA = () => (
     </div>
 
     <div className="mx-20 mt-8 flex gap-x-5">
-        <span className="hover:bg-gray-300 rounded-md py-2 px-4 cursor-pointer">Github</span>
-        <span className="hover:bg-gray-300 rounded-md py-2 px-4 cursor-pointer">LinkedIn</span>
+        <span className="cursor-pointer text-3xl hover:text-sky-800"><AiFillLinkedin /></span>
+        <span className="cursor-pointer text-3xl hover:text-gray-400"><AiFillGithub /></span>
     </div>
   </>
 );

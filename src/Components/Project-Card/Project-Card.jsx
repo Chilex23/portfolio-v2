@@ -3,16 +3,16 @@ import pic from "../../assets/images/techstack.png";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, desc }) => (
-  <div className="overflow-hidden rounded-bl-lg rounded-t-lg border-stone-800 border-l-2 border-b-2">
-    <figure>
+  <div className="overflow-hidden">
+    <figure className="hover:scale-105 transition-all rounded-lg overflow-hidden">
       <img src={pic} alt="project" />
     </figure>
-    <div className="p-4">
-      <h1 className="text-2xl font-medium mt-5 uppercase">{title}</h1>
+    <div>
+      <h1 className="text-4xl font-semibold mt-5">{title}</h1>
       <p className="mt-4">{desc}</p>
       <Link
         to={`/projects/${title}`}
-        className="block w-2/4 mx-auto text-center py-2 px-4 bg-black text-white my-4 rounded-3xl hover:scale-105 transition-all"
+        className="w-max my-4 uppercase font-semibold relative before:content-['>'] before:absolute before:top-0 before:left-[7rem] flex items-center transition-all border-b-2 border-transparent hover:border-black"
       >
         View Project
       </Link>
