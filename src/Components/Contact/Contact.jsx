@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 const Contact = () => (
   <section className="mx-20 mt-32">
-    <h1 className="text-5xl font-semibold text-center">Contact Me!</h1>
+    <h1 className="text-5xl font-semibold">Contact Me!</h1>
     <div className="w-2/4 mt-6">
       <h2 className="text-3xl font-medium">Let's Work together.</h2>
       <p className="my-5">Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>

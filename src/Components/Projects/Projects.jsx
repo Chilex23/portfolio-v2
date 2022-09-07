@@ -4,8 +4,8 @@ import ProjectCard from "../Project-Card/Project-Card";
 
 const Projects = () => (
   <section className="mx-20 mt-32">
-    <h1 className="text-5xl font-semibold text-center">Projects</h1>
-    <p className="my-6 text-lg">
+    <h1 className="text-5xl font-semibold">Projects</h1>
+    <p className="my-6 text-lg max-w-[70%]">
       I like to stay busy to improve my skills and always have a project in the works. Take a look at
       some of the applications I have built.
     </p>
