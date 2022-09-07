@@ -14,6 +14,8 @@ import { SiKubernetes } from "react-icons/si";
 import { SiAmazonaws } from "react-icons/si";
 import { SiMaterialui } from "react-icons/si";
 import { SiStyledcomponents } from "react-icons/si";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
 
 const skills = [
   { name: "CSS", icon: <RiCss3Fill /> },
@@ -34,9 +36,22 @@ const skills = [
 const Skills = () => (
   <section className="mx-20 mt-32">
     <h1 className="text-5xl font-semibold text-center">What I do and Skills</h1>
+    <p className="my-6 text-lg">
+      I've gained a solid understanding of computer science and web development
+      concepts by taking online courses like{" "}
+      <span className="font-semibold">Udacity's Full Stack Nanodegree</span> and
+      by self-studying, and have dedicated a lot of my free time to apply these
+      concepts to real-world scenarios and applications.
+    </p>
     <div className="mt-8 flex justify-center gap-x-10">
-      <SkillCard title="Frontend Development" />
-      <SkillCard title="Backend Development and API Development" />
+      <SkillCard
+        title="Frontend Development and Responsve Design"
+        icon={<FaLaptopCode />}
+      />
+      <SkillCard
+        title="Backend Development and API Development"
+        icon={<FaServer />}
+      />
     </div>
     <div className="flex mt-8 justify-around flex-wrap">
       {skills.map((skill, index) => (
