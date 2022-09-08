@@ -12,3 +12,23 @@
     0 5px hsl(0, 0%, 65%),
     0 5px 10px black;
 }
+
+.glass {
+  background: rgba( 255, 255, 255, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 55px );
+  -webkit-backdrop-filter: blur( 55px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box::before {
+  content: "";
+  border: 2px solid black;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  right: 12px;
+  top: 30px;
+  border-radius: 8px;
+}

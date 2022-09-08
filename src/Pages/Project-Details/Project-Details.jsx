@@ -36,7 +36,7 @@ const ProjectDetails = () => {
         </div>
       </div>
       <figure className="overflow-hidden h-[10%] mx-auto">
-        <img src={pic} alt={`${projectId} project`} />
+        <img src={project[0].webpscreenshot ? project[0].webpscreenshot : pic} alt={`${projectId} project`} />
       </figure>
 
       <h2 className="mt-8 text-5xl font-semibold">
@@ -57,8 +57,8 @@ const ProjectDetails = () => {
         Other Projects
       </h2>
       <div className="grid grid-cols-3 gap-5 mt-10 mx-auto">
-        {projects.slice(0, 3).map((project) => (
-          <ProjectCard title={project.title} desc={project.desc} />
+        {projects.filter((el) => el.title !== projectId).slice(0, 3).map(({title, desc, webpscreenshot}, i) => (
+          <ProjectCard key={i} title={title} desc={desc} webpPic={webpscreenshot} />
         ))}
       </div>
       <p className="mt-10 text-center">Made with ❤ by Onumaegbu Chima.</p>

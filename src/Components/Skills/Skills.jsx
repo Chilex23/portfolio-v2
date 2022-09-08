@@ -36,11 +36,11 @@ const skills = [
 const Skills = () => (
   <section className="mx-20 mt-32">
     <h1 className="text-5xl font-semibold">What I do and Skills</h1>
-    <p className="my-6 text-lg max-w-[70%]">
+    <p className="my-6 text-lg max-w-[70%] leading-loose">
       I've gained a solid understanding of computer science and web development
       concepts by taking online courses like{" "}
       <span className="font-semibold">Udacity's Full Stack Nanodegree</span> and
-      by self-studying, and have dedicated a lot of my free time to apply these
+      by self-studying, and I have dedicated a lot of my free time to apply these
       concepts to real-world scenarios and applications.
     </p>
     <div className="mt-8 flex gap-x-10">
@@ -53,7 +53,7 @@ const Skills = () => (
         icon={<FaServer />}
       />
     </div>
-    <div className="flex mt-8 flex-wrap max-w-[70%]">
+    <div className="flex mt-8 flex-wrap max-w-[70%] gap-5">
       {skills.map((skill, index) => (
         <SkillItem key={index} skill={skill.name} icon={skill.icon} />
       ))}
