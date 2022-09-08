@@ -6,17 +6,17 @@ const About = () => (
     initial={{ scale: 0.8, opacity: 0 }}
     whileInView={{ scale: 1, opacity: 1 }}
     transition={{ duration: 1 }}
-    className="mx-20 mt-[10rem]"
+    className="mx-5 sm:mx-20 mt-[10rem]"
   >
     <motion.h1
       initial={{ x: -1000, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="text-5xl font-semibold"
+      className="text-5xl font-semibold relative z-[1000]"
     >
       About Me
     </motion.h1>
-    <p className="mt-8 text-lg leading-loose max-w-[70%]">
+    <p className="mt-8 text-lg leading-loose w-full md:max-w-[70%]">
       I had a background in data analysis as a Reservoir Analyst Intern, this
       experience developed my passion for software development with a keen
       interest in web development. I love creating scalable and visually

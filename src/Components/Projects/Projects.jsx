@@ -4,7 +4,7 @@ import ProjectCard from "../Project-Card/Project-Card";
 import { motion } from "framer-motion";
 
 const Projects = () => (
-  <section className="mx-20 mt-32">
+  <section className="mx-5 sm:mx-20 mt-32">
     <motion.h1
       initial={{ x: -1000, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
@@ -17,12 +17,12 @@ const Projects = () => (
       initial={{ scale: 0.8, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="my-6 text-lg max-w-[70%] leading-loose"
+      className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
     >
       I like to stay busy to improve my skills and always have a project in the
       works. Take a look at some of the applications I have built.
     </motion.p>
-    <div className="grid grid-cols-2 gap-24 mt-20">
+    <div className="grid md:grid-cols-2 gap-24 mt-20">
       {projects.map(({ title, desc, webpscreenshot }, i) => (
         <ProjectCard
           key={i}

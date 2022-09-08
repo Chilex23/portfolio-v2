@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const Contact = () => (
-  <section className="mx-20 mt-32">
+  <section className="mx-5 sm:mx-20 mt-32">
     <motion.h1
       initial={{ x: -1000, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
@@ -13,7 +13,7 @@ const Contact = () => (
     >
       Contact Me!
     </motion.h1>
-    <div className="w-2/4 mt-6">
+    <div className="w-full md:w-2/4 mt-6">
       <h2 className="text-3xl font-medium">Let's Work together.</h2>
       <p className="my-5 leading-loose">
         Feel free to reach out if you're looking for a developer, have a

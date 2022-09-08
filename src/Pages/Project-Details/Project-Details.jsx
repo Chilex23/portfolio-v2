@@ -6,16 +6,22 @@ import { useParams } from "react-router-dom";
 import getProject from "../../utils/getProject";
 import { motion } from "framer-motion";
 
+const headerAnimate = {
+  hidden: { x: -100, opacity: 0 },
+  show: {x: 0, opacity: 1}
+}
+
 const ProjectDetails = () => {
   window.scrollTo(0, 0);
   const { projectId } = useParams();
-  console.log(getProject(projects, projectId));
+  // console.log(getProject(projects, projectId));
   const project = getProject(projects, projectId);
   return (
     <div className="py-8 w-[90%] mx-auto">
       <motion.h1
-        initial={{ x: -1000, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        variants={headerAnimate}
+        initial="hidden"
+        whileInView="show"
         transition={{ duration: 0.5 }}
         className="text-5xl font-semibold mb-8"
       >
@@ -25,11 +31,11 @@ const ProjectDetails = () => {
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="my-8 text-lg leading-loose max-w-[60%]"
+        className="my-8 text-lg leading-loose w-full md:max-w-[60%]"
       >
         {project[0].explanation}
       </motion.p>
-      <div className="flex mb-5 gap-x-10">
+      <div className="md:flex mb-5 gap-x-10">
         <div>
           <motion.h2
             initial={{ y: 100, opacity: 0 }}
@@ -39,9 +45,9 @@ const ProjectDetails = () => {
           >
             Stack
           </motion.h2>
-          <div className="flex gap-x-4 mt-4">
+          <div className="flex flex-wrap gap-x-4 mt-4">
             {project[0].stack.map((el, i) => (
-              <p key={i}>{el}</p>
+              <p className="my-2" key={i}>{el}</p>
             ))}
           </div>
         </div>
@@ -65,8 +71,9 @@ const ProjectDetails = () => {
         </div>
       </div>
       <motion.figure
-        initial={{ x: -1000, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        variants={headerAnimate}
+        initial="hidden"
+        whileInView="show"
         transition={{ duration: 0.5 }}
         className="overflow-hidden h-[10%] mx-auto"
       >
@@ -77,8 +84,9 @@ const ProjectDetails = () => {
       </motion.figure>
 
       <motion.h2
-        initial={{ x: -1000, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        variants={headerAnimate}
+        initial="hidden"
+        whileInView="show"
         transition={{ duration: 0.5 }}
         className="mt-8 text-5xl font-semibold"
       >
@@ -88,14 +96,15 @@ const ProjectDetails = () => {
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-8 text-lg leading-loose max-w-[60%]"
+        className="mt-8 text-lg leading-loose w-full md:max-w-[60%]"
       >
         {project[0]["web_stack"]}
       </motion.p>
 
       <motion.h2
-        initial={{ x: -1000, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        variants={headerAnimate}
+        initial="hidden"
+        whileInView="show"
         transition={{ duration: 0.5 }}
         className="mt-8 text-5xl font-semibold"
       >
@@ -105,20 +114,21 @@ const ProjectDetails = () => {
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="mt-8 text-lg max-w-[60%] leading-loose"
+        className="mt-8 text-lg w-full md:max-w-[60%] leading-loose"
       >
         {project[0]["lessons"]}
       </motion.p>
 
       <motion.h2
-        initial={{ x: -1000, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        variants={headerAnimate}
+        initial="hidden"
+        whileInView="show"
         transition={{ duration: 0.5 }}
         className="mt-8 text-5xl font-semibold"
       >
         Other Projects
       </motion.h2>
-      <div className="grid grid-cols-3 gap-5 mt-10 mx-auto">
+      <div className="grid md:grid-cols-3 gap-5 mt-10 mx-auto">
         {projects
           .filter((el) => el.title !== projectId)
           .slice(0, 3)

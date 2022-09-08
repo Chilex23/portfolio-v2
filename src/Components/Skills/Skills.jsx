@@ -33,7 +33,7 @@ const skills = [
 ];
 
 const Skills = () => (
-  <section className="mx-20 mt-32">
+  <section className="mx-5 sm:mx-20 mt-32">
     <motion.h1
       initial={{ x: -1000, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
@@ -46,7 +46,7 @@ const Skills = () => (
       initial={{ scale: 0.8, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="my-6 text-lg max-w-[70%] leading-loose"
+      className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
     >
       I've gained a solid understanding of computer science and web development
       concepts by taking online courses like{" "}
@@ -57,7 +57,7 @@ const Skills = () => (
 
     <div className="mt-8 flex gap-x-10">
       <SkillCard
-        title="Frontend Development and Responsve Design"
+        title="Frontend Development and Responsive Design"
         icon={<FaLaptopCode />}
         delay={1}
       />
@@ -72,7 +72,7 @@ const Skills = () => (
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 1}}
-      className="flex mt-8 flex-wrap max-w-[70%] gap-5"
+      className="flex mt-8 flex-wrap w-full md:max-w-[70%] gap-5"
     >
       {skills.map((skill, index) => (
         <SkillItem
