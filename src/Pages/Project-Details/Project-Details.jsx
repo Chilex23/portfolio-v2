@@ -4,6 +4,7 @@ import projects from "../../data/projects";
 import ProjectCard from "../../Components/Project-Card/Project-Card";
 import { useParams } from "react-router-dom";
 import getProject from "../../utils/getProject";
+import { motion } from "framer-motion";
 
 const ProjectDetails = () => {
   window.scrollTo(0, 0);
@@ -12,19 +13,47 @@ const ProjectDetails = () => {
   const project = getProject(projects, projectId);
   return (
     <div className="py-8 w-[90%] mx-auto">
-      <h1 className="text-5xl font-semibold mb-8">{projectId}</h1>
-      <p className="my-8 text-lg leading-loose max-w-[60%]">{project[0].explanation}</p>
+      <motion.h1
+        initial={{ x: -1000, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="text-5xl font-semibold mb-8"
+      >
+        {projectId}
+      </motion.h1>
+      <motion.p
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="my-8 text-lg leading-loose max-w-[60%]"
+      >
+        {project[0].explanation}
+      </motion.p>
       <div className="flex mb-5 gap-x-10">
         <div>
-          <h2 className="text-xl font-semibold">Stack</h2>
+          <motion.h2
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-xl font-semibold"
+          >
+            Stack
+          </motion.h2>
           <div className="flex gap-x-4 mt-4">
-            {
-              project[0].stack.map((el, i) => <p key={i}>{el}</p>)
-            }
+            {project[0].stack.map((el, i) => (
+              <p key={i}>{el}</p>
+            ))}
           </div>
         </div>
         <div>
-          <h2 className="text-xl font-semibold">Links</h2>
+          <motion.h2
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-xl font-semibold"
+          >
+            Links
+          </motion.h2>
           <div className="flex gap-x-4 mt-4 font-semibold">
             <p className="cursor-pointer border-b-2 border-black">
               View Live Site
@@ -35,31 +64,72 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-      <figure className="overflow-hidden h-[10%] mx-auto">
-        <img src={project[0].webpscreenshot ? project[0].webpscreenshot : pic} alt={`${projectId} project`} />
-      </figure>
+      <motion.figure
+        initial={{ x: -1000, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="overflow-hidden h-[10%] mx-auto"
+      >
+        <img
+          src={project[0].webpscreenshot ? project[0].webpscreenshot : pic}
+          alt={`${projectId} project`}
+        />
+      </motion.figure>
 
-      <h2 className="mt-8 text-5xl font-semibold">
+      <motion.h2
+        initial={{ x: -1000, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="mt-8 text-5xl font-semibold"
+      >
         Web Stack And Explanation
-      </h2>
-      <p className="mt-8 text-lg leading-loose max-w-[60%]">
+      </motion.h2>
+      <motion.p
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="mt-8 text-lg leading-loose max-w-[60%]"
+      >
         {project[0]["web_stack"]}
-      </p>
+      </motion.p>
 
-      <h2 className="mt-8 text-5xl font-semibold">
+      <motion.h2
+        initial={{ x: -1000, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="mt-8 text-5xl font-semibold"
+      >
         Lessons Learned
-      </h2>
-      <p className="mt-8 text-lg max-w-[60%] leading-loose">
-      {project[0]["lessons"]}
-      </p>
+      </motion.h2>
+      <motion.p
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="mt-8 text-lg max-w-[60%] leading-loose"
+      >
+        {project[0]["lessons"]}
+      </motion.p>
 
-      <h2 className="mt-8 text-5xl font-semibold">
+      <motion.h2
+        initial={{ x: -1000, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="mt-8 text-5xl font-semibold"
+      >
         Other Projects
-      </h2>
+      </motion.h2>
       <div className="grid grid-cols-3 gap-5 mt-10 mx-auto">
-        {projects.filter((el) => el.title !== projectId).slice(0, 3).map(({title, desc, webpscreenshot}, i) => (
-          <ProjectCard key={i} title={title} desc={desc} webpPic={webpscreenshot} />
-        ))}
+        {projects
+          .filter((el) => el.title !== projectId)
+          .slice(0, 3)
+          .map(({ title, desc, webpscreenshot }, i) => (
+            <ProjectCard
+              key={i}
+              title={title}
+              desc={desc}
+              webpPic={webpscreenshot}
+            />
+          ))}
       </div>
       <p className="mt-10 text-center">Made with ❤ by Onumaegbu Chima.</p>
     </div>

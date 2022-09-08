@@ -4,11 +4,17 @@ import webpPic from "../../assets/images/headshot-1.webp";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const CTA = () => (
   <>
     <div className="relative z-10 mt-24 mx-20 text-5xl font-semibold leading-tight flex gap-x-28">
-      <div className="w-[60%]">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-[60%] overflow-hidden"
+      >
         <h1>
           Hello <span className="heading">👋</span>,
         </h1>
@@ -17,8 +23,8 @@ const CTA = () => (
           <span className="heading">Lagos, Nigeria.</span>
         </p>
         <p>I build things for the web.</p>
-      </div>
-      <figure className="overflow-clip relative -z-10 flex justify-center items-center ml-16 box">
+      </motion.div>
+      <figure className="overflow-clip relative -z-10 flex justify-center items-center ml-16 box p-4">
         <img
           src={webpPic}
           alt="Headshot"

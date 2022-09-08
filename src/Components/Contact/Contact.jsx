@@ -1,13 +1,24 @@
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Contact = () => (
   <section className="mx-20 mt-32">
-    <h1 className="text-5xl font-semibold">Contact Me!</h1>
+    <motion.h1
+      initial={{ x: -1000, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="text-5xl font-semibold"
+    >
+      Contact Me!
+    </motion.h1>
     <div className="w-2/4 mt-6">
       <h2 className="text-3xl font-medium">Let's Work together.</h2>
-      <p className="my-5 leading-loose">Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+      <p className="my-5 leading-loose">
+        Feel free to reach out if you're looking for a developer, have a
+        question, or just want to connect.
+      </p>
       <a href="mailto: onumaegbuchilex@gmail.com">onumaegbuchilex@gmail.com</a>
       {/* <form className="mt-6">
         <div className="mb-10 grid grid-cols-form">
@@ -28,10 +39,18 @@ const Contact = () => (
       </form> */}
     </div>
     <div className="mt-8 flex gap-x-5">
-      <a href="https://linkedin.com/in/chima-onumaegbu" target="blank" className="cursor-pointer text-3xl hover:text-sky-800">
-       <AiFillLinkedin />
+      <a
+        href="https://linkedin.com/in/chima-onumaegbu"
+        target="blank"
+        className="cursor-pointer text-3xl hover:text-sky-800"
+      >
+        <AiFillLinkedin />
       </a>
-      <a href="https://github.com/Chilex23" target="blank" className="cursor-pointer text-3xl hover:text-gray-400">
+      <a
+        href="https://github.com/Chilex23"
+        target="blank"
+        className="cursor-pointer text-3xl hover:text-gray-400"
+      >
         <AiFillGithub />
       </a>
     </div>
