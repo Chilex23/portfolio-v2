@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const CTA = () => (
   <>
-    <div className="relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 before:content-['\201C'] before:absolute before:text-[30rem] before:-left-[2rem] before:-top-[6rem] before:dark:text-gray-600 before:text-gray-300 before:-z-20">
+    <div className="relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 before:absolute before:text-[30rem] before:-left-[2rem] before:-top-[6rem] before:dark:text-gray-600 before:text-gray-300 before:-z-20 quote">
       <motion.div
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

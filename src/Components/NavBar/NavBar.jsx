@@ -43,7 +43,7 @@ const NavBar = () => {
               animate={{ opacity: [0, 0, 1] }}
               transition={{ duration: 0.5 }}
             >
-              <BsSun className="text-2xl text-white" />
+              <BsSun className="text-2xl dark:text-white" />
             </motion.div>
           ) : (
             <motion.div
@@ -51,7 +51,7 @@ const NavBar = () => {
               animate={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
             >
-              <BsMoon className="text-2xl text-white" />
+              <BsMoon className="text-2xl dark:text-white" />
             </motion.div>
           )}
         </div>

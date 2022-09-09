@@ -14,7 +14,7 @@ const ProjectCard = ({ title, desc, webpPic }) => (
       <p className="mt-4">{desc}</p>
       <Link
         to={`/projects/${title}`}
-        className="w-max my-4 uppercase font-semibold relative flex items-center transition-all border-b-2 border-transparent hover:border-black"
+        className="w-max my-4 uppercase font-semibold relative flex items-center transition-all border-b-2 border-transparent hover:border-black hover:dark:border-gray-300"
       >
         View Project
         <span className="ml-1"><AiOutlineRight /></span>

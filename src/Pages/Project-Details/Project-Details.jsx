@@ -28,8 +28,8 @@ const ProjectDetails = () => {
         {projectId}
       </motion.h1>
       <motion.p
-        initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="my-8 text-lg leading-loose w-full md:max-w-[60%]"
       >
@@ -38,7 +38,7 @@ const ProjectDetails = () => {
       <div className="md:flex mb-5 gap-x-10">
         <div>
           <motion.h2
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
             className="text-xl font-semibold"
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
         </div>
         <div>
           <motion.h2
-            initial={{ y: 5, opacity: 0 }}
+            initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="text-xl font-semibold"
@@ -61,10 +61,10 @@ const ProjectDetails = () => {
             Links
           </motion.h2>
           <div className="flex gap-x-4 mt-4 font-semibold">
-            <p className="cursor-pointer border-b-2 border-black">
+            <p className="cursor-pointer border-b-2 border-black dark:border-gray-300">
               View Live Site
             </p>
-            <p className="cursor-pointer border-b-2 border-black">
+            <p className="cursor-pointer border-b-2 border-black dark:border-gray-300">
               Source Code
             </p>
           </div>
@@ -93,8 +93,8 @@ const ProjectDetails = () => {
         Web Stack And Explanation
       </motion.h2>
       <motion.p
-        initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-lg leading-loose w-full md:max-w-[60%]"
       >
@@ -111,8 +111,8 @@ const ProjectDetails = () => {
         Lessons Learned
       </motion.h2>
       <motion.p
-        initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-lg w-full md:max-w-[60%] leading-loose"
       >
