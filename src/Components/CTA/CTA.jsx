@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const CTA = () => (
   <>
-    <div className="relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 before:absolute before:text-[30rem] before:-left-[2rem] before:-top-[6rem] before:dark:text-gray-600 before:text-gray-300 before:-z-20 quote">
+    <div className={`relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 before:content-['\\201C'] before:absolute before:text-[30rem] before:-left-[2rem] before:-top-[6rem] before:dark:text-gray-600 before:text-gray-300 before:-z-20`}>
       <motion.div
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -22,7 +22,7 @@ const CTA = () => (
         </p>
         <p>I build things for the web.</p>
       </motion.div>
-      <figure className="overflow-clip w-fit mx-auto md:mx-0 relative -z-10 flex justify-center items-center mt-5 md:ml-16 p-4 before:content-[''] before:border-2 before:border-black before:w-[85%] before:h-[90%] before:absolute before:right-[5px] before:top-0 before:rounded-lg before:dark:border-gray-600 ">
+      <figure className="overflow-clip w-fit mx-auto md:mx-0 relative -z-10 flex justify-center items-center mt-16 md:ml-16 p-4 before:content-[''] before:border-2 before:border-black before:w-[85%] before:h-[90%] before:absolute before:right-[5px] before:top-0 before:rounded-lg before:dark:border-gray-600 ">
         <img
           src={webpPic}
           alt="Headshot"
@@ -36,7 +36,7 @@ const CTA = () => (
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66], delay: 0.7 }}
-      className="mx-5 sm:mx-20 mt-8 flex gap-x-5 relative before:content-[''] before:absolute before:h-[3px] before:w-[70%] before:left-0 before:-top-[15px] before:bg-gray-400 before:dark:bg-gray-600"
+      className="mx-5 sm:mx-20 mt-16 flex gap-x-5 relative before:content-[''] before:absolute before:h-[3px] before:w-[70%] before:left-0 before:-top-[15px] before:bg-gray-400 before:dark:bg-gray-600"
     >
       <a
         href="https://linkedin.com/in/chima-onumaegbu"
