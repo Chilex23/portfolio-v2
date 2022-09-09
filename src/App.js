@@ -7,7 +7,7 @@ import HomePage from './Pages/Homepage/Homepage';
 
 function App() {
   return (
-    <div className="">
+    <div className="dark:bg-stone-900 dark:text-gray-300">
       <Router>
         <NavBar />
         <Overlay />
