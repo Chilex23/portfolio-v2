@@ -22,7 +22,7 @@ const About = () => (
       interest in web development. I love creating scalable and visually
       appealing web applications.
     </p>
-    <p className="text-lg leading-loose">
+    <p className="text-lg leading-loose w-full md:max-w-[70%]">
       At my spare time, I like to hike and collect rocks - A habit I developed
       as a Geophysicist.
     </p>

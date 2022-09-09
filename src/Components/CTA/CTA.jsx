@@ -8,23 +8,21 @@ import { motion } from "framer-motion";
 
 const CTA = () => (
   <>
-    <div className="relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28">
+    <div className="relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 quote">
       <motion.div
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
-        className="w-full md:w-[80%] overflow-hidden"
+        transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
+        className="w-full md:w-[80%] overflow-hidden pt-10"
       >
-        <h1>
-          Hello <span className="heading">👋</span>,
-        </h1>
+        <h1>Hello 👋,</h1>
         <p>
-          I'm <span className="heading">Onumaegbu Chima</span>, based in{" "}
-          <span className="heading">Lagos, Nigeria.</span>
+          I'm <span className="heading">Onumaegbu Chima</span>, based in Lagos,
+          Nigeria.
         </p>
         <p>I build things for the web.</p>
       </motion.div>
-      <figure className="overflow-clip relative -z-10 flex justify-center items-center mt-5 md:ml-16 box p-4">
+      <figure className="overflow-clip w-fit mx-auto md:mx-0 relative -z-10 flex justify-center items-center mt-5 md:ml-16 p-4 box">
         <img
           src={webpPic}
           alt="Headshot"
@@ -34,7 +32,7 @@ const CTA = () => (
       </figure>
     </div>
 
-    <div className="mx-5 sm:mx-20 mt-8 flex gap-x-5">
+    <div className="mx-5 sm:mx-20 mt-8 flex gap-x-5 relative line">
       <a
         href="https://linkedin.com/in/chima-onumaegbu"
         target="blank"

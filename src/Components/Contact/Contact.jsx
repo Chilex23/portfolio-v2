@@ -19,7 +19,7 @@ const Contact = () => (
         Feel free to reach out if you're looking for a developer, have a
         question, or just want to connect.
       </p>
-      <a href="mailto: onumaegbuchilex@gmail.com">onumaegbuchilex@gmail.com</a>
+      <a href="mailto: onumaegbuchilex@gmail.com" className="border-2 border-stone-800 rounded-lg py-3 px-6 hover:bg-black hover:text-white">Say Hello</a>
       {/* <form className="mt-6">
         <div className="mb-10 grid grid-cols-form">
           <label className="font-bold mr-8">Name :</label>
