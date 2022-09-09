@@ -2,9 +2,10 @@ import React from "react";
 import pic from "../../assets/images/techstack.png";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({ title, desc, webpPic }) => (
-  <div className="overflow-hidden">
+  <motion.div initial={{y: 100 }} whileInView={{y: 0}} className="overflow-hidden">
     <figure className="hover:scale-105 transition-all rounded-lg overflow-hidden">
       <img src={webpPic ? webpPic : pic} alt="project" />
     </figure>
@@ -19,7 +20,7 @@ const ProjectCard = ({ title, desc, webpPic }) => (
         <span className="ml-1"><AiOutlineRight /></span>
       </Link>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default ProjectCard;

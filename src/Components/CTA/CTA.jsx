@@ -10,10 +10,10 @@ const CTA = () => (
   <>
     <div className="relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28">
       <motion.div
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="w-full md:w-[75%] overflow-hidden"
+        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
+        className="w-full md:w-[80%] overflow-hidden"
       >
         <h1>
           Hello <span className="heading">👋</span>,

@@ -5,13 +5,13 @@ const About = () => (
   <motion.section
     initial={{ scale: 0.8, opacity: 0 }}
     whileInView={{ scale: 1, opacity: 1 }}
-    transition={{ duration: 1 }}
+    transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
     className="mx-5 sm:mx-20 mt-[10rem]"
   >
     <motion.h1
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
       className="text-5xl font-semibold relative z-[1000]"
     >
       About Me

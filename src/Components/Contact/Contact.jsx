@@ -8,7 +8,7 @@ const Contact = () => (
     <motion.h1
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
       className="text-5xl font-semibold"
     >
       Contact Me!

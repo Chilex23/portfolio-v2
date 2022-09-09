@@ -22,7 +22,7 @@ const ProjectDetails = () => {
         variants={headerAnimate}
         initial="hidden"
         whileInView="show"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
         className="text-5xl font-semibold mb-8"
       >
         {projectId}
@@ -30,7 +30,7 @@ const ProjectDetails = () => {
       <motion.p
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="my-8 text-lg leading-loose w-full md:max-w-[60%]"
       >
         {project[0].explanation}
@@ -40,7 +40,7 @@ const ProjectDetails = () => {
           <motion.h2
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
             className="text-xl font-semibold"
           >
             Stack
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
         </div>
         <div>
           <motion.h2
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 5, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="text-xl font-semibold"
@@ -74,7 +74,7 @@ const ProjectDetails = () => {
         variants={headerAnimate}
         initial="hidden"
         whileInView="show"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="overflow-hidden h-[10%] mx-auto"
       >
         <img
@@ -87,7 +87,7 @@ const ProjectDetails = () => {
         variants={headerAnimate}
         initial="hidden"
         whileInView="show"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-5xl font-semibold"
       >
         Web Stack And Explanation
@@ -95,7 +95,7 @@ const ProjectDetails = () => {
       <motion.p
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-lg leading-loose w-full md:max-w-[60%]"
       >
         {project[0]["web_stack"]}
@@ -105,7 +105,7 @@ const ProjectDetails = () => {
         variants={headerAnimate}
         initial="hidden"
         whileInView="show"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-5xl font-semibold"
       >
         Lessons Learned
@@ -113,7 +113,7 @@ const ProjectDetails = () => {
       <motion.p
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-lg w-full md:max-w-[60%] leading-loose"
       >
         {project[0]["lessons"]}
@@ -123,7 +123,7 @@ const ProjectDetails = () => {
         variants={headerAnimate}
         initial="hidden"
         whileInView="show"
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
         className="mt-8 text-5xl font-semibold"
       >
         Other Projects

@@ -37,7 +37,7 @@ const Skills = () => (
     <motion.h1
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
       className="text-5xl font-semibold"
     >
       What I do and Skills
@@ -45,7 +45,7 @@ const Skills = () => (
     <motion.p
       initial={{ scale: 0.8, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
       className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
     >
       I've gained a solid understanding of computer science and web development
@@ -71,7 +71,7 @@ const Skills = () => (
     <motion.div
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
-      transition={{duration: 1}}
+      transition={{duration: 0.5, ease: [.31,.1,.66,.66] }}
       className="flex mt-8 flex-wrap w-full md:max-w-[70%] gap-5"
     >
       {skills.map((skill, index) => (
