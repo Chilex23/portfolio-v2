@@ -11,6 +11,14 @@ const Education = () => (
     >
       Education
     </motion.h1>
+    <motion.p
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
+      className="mt-10"
+    >
+      These are some of the places where I have honed my skills.
+    </motion.p>
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const CTA = () => (
   <>
-    <div className={`relative z-10 mt-10 md:mt-24 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 before:content-['\\201C'] before:absolute before:text-[30rem] before:-left-[2rem] before:-top-[6rem] before:dark:text-gray-600 before:text-gray-300 before:-z-20`}>
+    <div className={`relative z-10 mt-10 mx-5 sm:mx-20 text-4xl tablet:text-5xl font-semibold leading-tight md:flex gap-5 tablet:gap-28 before:content-['\\201C'] before:absolute before:text-[30rem] before:-left-[2rem] before:-top-[6rem] before:dark:text-gray-600 before:text-gray-300 before:-z-20`}>
       <motion.div
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -22,7 +22,7 @@ const CTA = () => (
         </p>
         <p>I build things for the web.</p>
       </motion.div>
-      <figure className="overflow-clip w-fit mx-auto md:mx-0 relative -z-10 flex justify-center items-center mt-16 md:ml-16 p-4 before:content-[''] before:border-2 before:border-black before:w-[85%] before:h-[90%] before:absolute before:right-[5px] before:top-0 before:rounded-lg before:dark:border-gray-600 ">
+      <figure className="overflow-clip w-fit mx-auto md:mx-0 relative -z-10 flex justify-center items-center mt-16 md:mt-4 md:ml-16 p-4 before:content-[''] before:border-2 before:border-black before:w-[85%] before:h-[90%] before:absolute before:right-[5px] before:top-0 before:rounded-lg before:dark:border-gray-600 ">
         <img
           src={webpPic}
           alt="Headshot"

@@ -34,7 +34,7 @@ const NavBar = () => {
           />
         </Link>
         <div
-          className="flex mr-4 lg:mr-6 justify-between items-center cursor-pointer"
+          className="flex mr-4 lg:mr-6 justify-between items-center cursor-pointer fixed top-12 right-4 sm:right-10 z-[1000]"
           onClick={toggleThemeHandler}
         >
           {theme === "light" ? (

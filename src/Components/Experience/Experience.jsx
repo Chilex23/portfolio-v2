@@ -11,6 +11,15 @@ const Experience = () => (
     >
       Experience
     </motion.h1>
+    <motion.p
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
+      className="mt-10"
+    >
+      These are some of the companies and places that I have been able to gain
+      valuable experience that have shaped me.
+    </motion.p>
     <motion.div
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
