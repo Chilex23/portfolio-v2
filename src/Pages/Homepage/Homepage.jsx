@@ -4,6 +4,8 @@ import About from "../../Components/About/About";
 import Skills from "../../Components/Skills/Skills";
 import Projects from "../../Components/Projects/Projects";
 import Contact from "../../Components/Contact/Contact";
+import Experience from "../../Components/Experience/Experience";
+import Education from "../../Components/Education/education";
 
 const HomePage = () => (
     <div className="pb-20">
@@ -11,6 +13,8 @@ const HomePage = () => (
       <About />
       <Skills />
       <Projects />
+      <Experience />
+      <Education />
       <Contact />
     </div>
 );
