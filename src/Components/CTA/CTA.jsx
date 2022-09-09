@@ -36,7 +36,7 @@ const CTA = () => (
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66], delay: 0.7 }}
-      className="mx-5 sm:mx-20 mt-8 flex gap-x-5 relative before:content-[''] before:absolute before:h-[3px] before:w-[70%] before:left-0 before:-top-[15px] before:bg-gray-200 before:dark:bg-gray-600"
+      className="mx-5 sm:mx-20 mt-8 flex gap-x-5 relative before:content-[''] before:absolute before:h-[3px] before:w-[70%] before:left-0 before:-top-[15px] before:bg-gray-400 before:dark:bg-gray-600"
     >
       <a
         href="https://linkedin.com/in/chima-onumaegbu"
