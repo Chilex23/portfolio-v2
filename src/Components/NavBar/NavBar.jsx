@@ -30,11 +30,11 @@ const NavBar = () => {
             animate={{ y: 0 }}
             src={logo}
             alt="Logo"
-            className="w-20 h-20 rounded-full"
+            className="w-16 h-16 rounded-full"
           />
         </Link>
         <div
-          className="flex mr-4 lg:mr-6 justify-between items-center cursor-pointer fixed top-12 right-4 sm:right-10 z-[1000]"
+          className="flex mr-4 lg:mr-6 justify-between items-center cursor-pointer fixed top-10 right-4 sm:right-10 z-[1000]"
           onClick={toggleThemeHandler}
         >
           {theme === "light" ? (
