@@ -62,10 +62,10 @@ const ProjectDetails = () => {
           </motion.h2>
           <div className="flex gap-x-4 mt-4 font-semibold">
             <p className="cursor-pointer border-b-2 border-black dark:border-gray-300">
-              View Live Site
+              <a href={project[0].liveLink} target="blank">View Live Site</a>
             </p>
             <p className="cursor-pointer border-b-2 border-black dark:border-gray-300">
-              Source Code
+              <a href={project[0].githubLink} target="blank">Source Code</a>
             </p>
           </div>
         </div>
