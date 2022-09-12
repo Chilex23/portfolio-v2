@@ -7,6 +7,7 @@ import gymfitpng from "../assets/images/gymfit.png";
 import techstackwebp from "../assets/images/techstack-1.webp";
 import techstackpng from "../assets/images/techstack.png";
 import restpng from "../assets/images/rest.png";
+import triviapng from "../assets/images/trivia.png";
 
 const projects = [
   {
@@ -73,6 +74,7 @@ const projects = [
       "I used Python for developing the API as I like how fast it was to spin up a server and the ORM for accessing a database. I used PostgreSQL for the database. ReactJS was the clear tool for developing the frontend client because of how easy it was to monitor state for the quiz game built on top of the API.",
     lessons:
       "This project solidified my knowledge in building web servers. I learnt about CORS to handle request from different domains hitting my API server. I also learnt how to write proper documentation for my APIs.",
+    webpscreenshot: triviapng,
     liveLink: "https://udatrivia-live.herokuapp.com/",
     githubLink: "https://github.com/Chilex23/TriviaAPI"
   },
