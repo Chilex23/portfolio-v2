@@ -8,7 +8,7 @@ const Contact = () => (
     <motion.h1
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
+      transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
       className="text-5xl font-semibold"
     >
       Contact Me!
@@ -19,7 +19,20 @@ const Contact = () => (
         Feel free to reach out if you're looking for a developer, have a
         question, or just want to connect.
       </p>
-      <a href="mailto: onumaegbuchilex@gmail.com" className="border-2 border-stone-800 rounded-lg py-3 px-6 hover:bg-black hover:text-white">Say Hello</a>
+      <div className="flex">
+        <a
+          href="mailto: onumaegbuchilex@gmail.com"
+          className="border-2 border-stone-800 dark:border-gray-300 rounded-lg py-3 px-6 hover:bg-black hover:text-white"
+        >
+          Say Hello
+        </a>
+        <a
+          href="/"
+          className="ml-5 border-2 border-stone-800 dark:border-gray-300 rounded-lg py-3 px-6 hover:bg-black hover:text-white"
+        >
+          View Resume
+        </a>
+      </div>
       {/* <form className="mt-6">
         <div className="mb-10 grid grid-cols-form">
           <label className="font-bold mr-8">Name :</label>

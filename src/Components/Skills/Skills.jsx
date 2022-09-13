@@ -50,7 +50,7 @@ const Skills = () => (
     >
       I've gained a solid understanding of computer science and web development
       concepts by taking online courses like{" "}
-      <span className="font-semibold">Udacity's Full Stack Nanodegree</span> and
+      <span className="font-semibold">Udacity's Full Stack Nanodegree</span>, attending an on-site bootcamp at <span className="font-semibold">Moat Academy for Software Developers</span> and
       by self-studying, and I have dedicated a lot of my free time to apply
       these concepts to real-world scenarios and applications.
     </motion.p>

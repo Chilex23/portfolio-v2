@@ -98,7 +98,7 @@ const projects = [
   {
     title: "RestCountries",
     desc: "A web app that displays information about all the countries in the world.",
-    stack: ["HTML and CSS", "SASS", "JavaScript ES6", "Webpack"],
+    stack: ["HTML and CSS", "SASS", "JavaScript ES6+", "Webpack"],
     explanation:
       "This project is a site that shows all the countries in the world and relevant information about countries.",
     web_stack:
