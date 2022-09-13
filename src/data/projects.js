@@ -1,13 +1,19 @@
 import f1fanzonewebp from "../assets/images/F1FanZone-1.webp";
 import f1fanzonepng from "../assets/images/F1FanZone.png";
+import f1fanzonepng2 from "../assets/images/fanzone-2.png";
 import fyyurwebp from "../assets/images/fyyur.webp";
 import fyyurpng from "../assets/images/fyyur-1.png";
+import fyyurpng2 from "../assets/images/fyyur-2.png";
 import gymfitwebp from "../assets/images/gymfit-1.webp";
 import gymfitpng from "../assets/images/gymfit.png";
+import gymfitpng2 from "../assets/images/gymfit-2.png";
 import techstackwebp from "../assets/images/techstack-1.webp";
 import techstackpng from "../assets/images/techstack.png";
+import techstackpng2 from "../assets/images/techstack-2.png";
 import restpng from "../assets/images/rest.png";
+import restpng2 from "../assets/images/rest-2.png";
 import triviapng from "../assets/images/trivia.png";
+import triviapng2 from "../assets/images/trivia-2.png";
 
 const projects = [
   {
@@ -28,6 +34,7 @@ const projects = [
       "I learnt how to use an ORM for writing queries to my database. I also solidified my knowledge in JavaScript by formatting dates and timezones for shows.",
     webpscreenshot: fyyurwebp,
     pngscreenshot: fyyurpng,
+    pngscreenshot2: fyyurpng2,
     liveLink: "https://fyyurbook.herokuapp.com/",
     githubLink: "https://github.com/Chilex23/Fyyur"
   },
@@ -44,6 +51,7 @@ const projects = [
       "This project helped to solidify a lot my React knowledge, such as using hooks, code-splitting, error-boundaries and updating states. I also got a lot of great practice using ES6+ syntax across the entirety of the project.",
     webpscreenshot: f1fanzonewebp,
     pngscreenshot: f1fanzonepng,
+    pngscreenshot2: f1fanzonepng2,
     liveLink: "https://kaholas-one.vercel.app/",
     githubLink: "https://github.com/Chilex23/F1-Fan-Zone"
   },
@@ -60,6 +68,7 @@ const projects = [
       "I learnt how to authorize users and create sessions for them. I also solidified my knowledge in JQuery, create ERD diagrams for my tables in my database, migrations in my database and how to work with payment service SDKs.",
     webpscreenshot: techstackwebp,
     pngscreenshot: techstackpng,
+    pngscreenshot2: techstackpng2,
     liveLink: "https://chilex23.pythonanywhere.com/",
     githubLink: "https://github.com/Chilex23/Techstack"
   },
@@ -69,12 +78,13 @@ const projects = [
     desc: "A RESTful API for trivia questions that cuts across general knowledge.",
     stack: ["HTML and CSS", "ReactJS", "Python(Flask)", "PostgreSQL"],
     explanation:
-      "This was a RESTful API developed for my Nanodegree project. It was provided trivia questions that could be consumed by any frontend client.",
+      "This was a RESTful API developed for my Nanodegree project. It was provided trivia questions that could be consumed by any frontend client. I built a frontend client using ReactJS",
     web_stack:
       "I used Python for developing the API as I like how fast it was to spin up a server and the ORM for accessing a database. I used PostgreSQL for the database. ReactJS was the clear tool for developing the frontend client because of how easy it was to monitor state for the quiz game built on top of the API.",
     lessons:
       "This project solidified my knowledge in building web servers. I learnt about CORS to handle request from different domains hitting my API server. I also learnt how to write proper documentation for my APIs.",
     webpscreenshot: triviapng,
+    pngscreenshot2: triviapng2,
     liveLink: "https://udatrivia-live.herokuapp.com/",
     githubLink: "https://github.com/Chilex23/TriviaAPI"
   },
@@ -91,6 +101,7 @@ const projects = [
       "I improved my knowledge about CSS grids. I also solidified my knowledge in SASS.",
     webpscreenshot: gymfitwebp,
     pngscreenshot: gymfitpng,
+    pngscreenshot2: gymfitpng2,
     liveLink: "https://chilex23.github.io/GymFit/",
     githubLink: "https://github.com/Chilex23/GymFit"
   },
@@ -107,6 +118,7 @@ const projects = [
       "I solidified my knowledge in DOM manipulation using vanilla javascript, asynchronous actions for data fetching and also how to configure webpack for bundling and minifing.",
     webpscreenshot: restpng,
     pngscreenshot: restpng,
+    pngscreenshot2: restpng2,
     liveLink: "https://chilex23.github.io/RestCountries_Deploy/",
     githubLink: "https://github.com/Chilex23/RESTcountries"
   },

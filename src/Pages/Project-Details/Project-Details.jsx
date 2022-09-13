@@ -82,6 +82,18 @@ const ProjectDetails = () => {
           alt={`${projectId} project`}
         />
       </motion.figure>
+      <motion.figure
+        variants={headerAnimate}
+        initial="hidden"
+        whileInView="show"
+        transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
+        className="overflow-hidden h-[10%] mx-auto mt-16"
+      >
+        <img
+          src={project[0].pngscreenshot2 ? project[0].pngscreenshot2 : pic}
+          alt={`${projectId} project`}
+        />
+      </motion.figure>
 
       <motion.h2
         variants={headerAnimate}
