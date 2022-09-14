@@ -35,16 +35,16 @@ const skills = [
 const Skills = () => (
   <section className="mx-5 sm:mx-20 mt-32">
     <motion.h1
-      initial={{ x: -100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ translateX: -100, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
       className="text-5xl font-semibold"
     >
       What I do and Skills
     </motion.h1>
     <motion.p
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ translateY: 100, opacity: 0 }}
+      whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
       className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
     >

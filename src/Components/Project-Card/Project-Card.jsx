@@ -1,13 +1,13 @@
 import React from "react";
-import pic from "../../assets/images/techstack.png";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({ title, desc, webpPic }) => (
-  <motion.div initial={{y: 100 }} whileInView={{y: 0}} className="overflow-hidden">
+const ProjectCard = ({ title, desc, webpPic, pngPic }) => (
+  <motion.div initial={{translateY: 100 }} whileInView={{translateY: 0}} className="overflow-hidden">
     <figure className="hover:scale-105 transition-all rounded-lg overflow-hidden">
-      <img src={webpPic ? webpPic : pic} alt="project" />
+      <img src={webpPic ? webpPic : pngPic} alt="project" />
+
     </figure>
     <div>
       <h1 className="text-4xl font-semibold mt-5">{title}</h1>

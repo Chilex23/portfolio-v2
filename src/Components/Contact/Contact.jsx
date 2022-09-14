@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const Contact = () => (
   <section className="mx-5 sm:mx-20 mt-32">
     <motion.h1
-      initial={{ x: -100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ translateX: -100, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
       className="text-5xl font-semibold"
     >

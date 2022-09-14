@@ -17,16 +17,16 @@ const container = {
 const Projects = () => (
   <section className="mx-5 sm:mx-20 mt-32">
     <motion.h1
-      initial={{ x: -100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ translateX: -100, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
       className="text-5xl font-semibold"
     >
       Projects
     </motion.h1>
     <motion.p
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ translateY: 100, opacity: 0 }}
+      whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
       className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
     >
@@ -39,12 +39,13 @@ const Projects = () => (
       whileInView="show"
       className="grid md:grid-cols-2 gap-24 mt-20"
     >
-      {projects.map(({ title, desc, webpscreenshot }, i) => (
+      {projects.map(({ title, desc, webpscreenshot, pngscreenshot }, i) => (
         <ProjectCard
           key={i}
           title={title}
           desc={desc}
           webpPic={webpscreenshot}
+          pngPic={pngscreenshot}
         />
       ))}
     </motion.div>

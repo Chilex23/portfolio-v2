@@ -1,17 +1,30 @@
-import f1fanzonewebp from "../assets/images/F1FanZone-1.webp";
+import f1fanzonewebp from "../assets/images/optimized/F1FanZone-1.webp";
+import f1fanzonewebp2 from "../assets/images/optimized/fanzone-3.webp"; 
 import f1fanzonepng from "../assets/images/F1FanZone.png";
 import f1fanzonepng2 from "../assets/images/fanzone-2.png";
-import fyyurwebp from "../assets/images/fyyur.webp";
+
+import fyyurwebp from "../assets/images/optimized/fyyur-3.webp";
+import fyyurwebp2 from "../assets/images/optimized/fyyur-4.webp";
 import fyyurpng from "../assets/images/fyyur-1.png";
 import fyyurpng2 from "../assets/images/fyyur-2.png";
-import gymfitwebp from "../assets/images/gymfit-1.webp";
+
+import gymfitwebp from "../assets/images/optimized/gymfit-1.webp";
+import gymfitwebp2 from "../assets/images/optimized/gymfit-4.webp";
 import gymfitpng from "../assets/images/gymfit.png";
 import gymfitpng2 from "../assets/images/gymfit-2.png";
-import techstackwebp from "../assets/images/techstack-1.webp";
+
+import techstackwebp from "../assets/images/optimized/techstack-1.webp";
+import techstackwebp2 from "../assets/images/optimized/techstack_webp_2.webp";
 import techstackpng from "../assets/images/techstack.png";
 import techstackpng2 from "../assets/images/techstack-2.png";
+
+import restwebp from "../assets/images/optimized/restWebp.webp";
+import restwebp2 from "../assets/images/optimized/restWebp-2.webp";
 import restpng from "../assets/images/rest.png";
 import restpng2 from "../assets/images/rest-2.png";
+
+import triviawebp from "../assets/images/optimized/trivia_webp.webp";
+import triviawebp2 from "../assets/images/optimized/trivia_webp_2.webp";
 import triviapng from "../assets/images/trivia.png";
 import triviapng2 from "../assets/images/trivia-2.png";
 
@@ -33,6 +46,7 @@ const projects = [
     lessons:
       "I learnt how to use an ORM for writing queries to my database. I also solidified my knowledge in JavaScript by formatting dates and timezones for shows.",
     webpscreenshot: fyyurwebp,
+    webpscreenshot2: fyyurwebp2,
     pngscreenshot: fyyurpng,
     pngscreenshot2: fyyurpng2,
     liveLink: "https://fyyurbook.herokuapp.com/",
@@ -50,6 +64,7 @@ const projects = [
     lessons:
       "This project helped to solidify a lot my React knowledge, such as using hooks, code-splitting, error-boundaries and updating states. I also got a lot of great practice using ES6+ syntax across the entirety of the project.",
     webpscreenshot: f1fanzonewebp,
+    webpscreenshot2: f1fanzonewebp2,
     pngscreenshot: f1fanzonepng,
     pngscreenshot2: f1fanzonepng2,
     liveLink: "https://kaholas-one.vercel.app/",
@@ -67,6 +82,7 @@ const projects = [
     lessons:
       "I learnt how to authorize users and create sessions for them. I also solidified my knowledge in JQuery, create ERD diagrams for my tables in my database, migrations in my database and how to work with payment service SDKs.",
     webpscreenshot: techstackwebp,
+    webpscreenshot2: techstackwebp2,
     pngscreenshot: techstackpng,
     pngscreenshot2: techstackpng2,
     liveLink: "https://chilex23.pythonanywhere.com/",
@@ -83,7 +99,9 @@ const projects = [
       "I used Python for developing the API as I like how fast it was to spin up a server and the ORM for accessing a database. I used PostgreSQL for the database. ReactJS was the clear tool for developing the frontend client because of how easy it was to monitor state for the quiz game built on top of the API.",
     lessons:
       "This project solidified my knowledge in building web servers. I learnt about CORS to handle request from different domains hitting my API server. I also learnt how to write proper documentation for my APIs.",
-    webpscreenshot: triviapng,
+    webpscreenshot: triviawebp,
+    webpscreenshot2: triviawebp2,
+    pngscreenshot: triviapng,
     pngscreenshot2: triviapng2,
     liveLink: "https://udatrivia-live.herokuapp.com/",
     githubLink: "https://github.com/Chilex23/TriviaAPI"
@@ -100,6 +118,7 @@ const projects = [
     lessons:
       "I improved my knowledge about CSS grids. I also solidified my knowledge in SASS.",
     webpscreenshot: gymfitwebp,
+    webpscreenshot2: gymfitwebp2,
     pngscreenshot: gymfitpng,
     pngscreenshot2: gymfitpng2,
     liveLink: "https://chilex23.github.io/GymFit/",
@@ -116,7 +135,8 @@ const projects = [
       "I used SASS for the UI as I wanted to be comfortable with it. JavaScript to handle dropdown interactions and DOM Manipulation. Axios for fetching data from the RestCountries API. Webpack for bundling as it was the bundler I wanted to learn.",
     lessons:
       "I solidified my knowledge in DOM manipulation using vanilla javascript, asynchronous actions for data fetching and also how to configure webpack for bundling and minifing.",
-    webpscreenshot: restpng,
+    webpscreenshot: restwebp,
+    webpscreenshot2: restwebp2,
     pngscreenshot: restpng,
     pngscreenshot2: restpng2,
     liveLink: "https://chilex23.github.io/RestCountries_Deploy/",

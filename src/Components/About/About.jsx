@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const About = () => (
   <motion.section
-    initial={{ y: 100, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
+    initial={{ translateY: 100, opacity: 0 }}
+    whileInView={{ opacity: 1, translateY: 0 }}
     transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
     className="mx-5 sm:mx-20 mt-[10rem]"
   >
