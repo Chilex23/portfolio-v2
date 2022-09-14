@@ -22,12 +22,14 @@ const Contact = () => (
       <div className="flex">
         <a
           href="mailto: onumaegbuchilex@gmail.com"
+          target="blank"
           className="border-2 border-stone-800 dark:border-gray-300 rounded-lg py-3 px-6 hover:bg-black hover:text-white"
         >
           Say Hello
         </a>
         <a
-          href="/"
+          href="https://drive.google.com/file/d/1kGRv9a2WWMlJ7BDnOTyTeGphQtEwBu4F/view?usp=sharing"
+          target="blank"
           className="ml-5 border-2 border-stone-800 dark:border-gray-300 rounded-lg py-3 px-6 hover:bg-black hover:text-white"
         >
           View Resume
