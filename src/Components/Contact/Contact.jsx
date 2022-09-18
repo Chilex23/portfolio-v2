@@ -9,7 +9,7 @@ const Contact = () => (
       initial={{ translateX: -100, opacity: 0 }}
       whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-      className="text-5xl font-semibold"
+      className="text-5xl font-semibold transition-all"
     >
       Contact Me!
     </motion.h1>
@@ -28,7 +28,7 @@ const Contact = () => (
           Say Hello
         </a>
         <a
-          href="https://drive.google.com/file/d/1kGRv9a2WWMlJ7BDnOTyTeGphQtEwBu4F/view?usp=sharing"
+          href="https://drive.google.com/file/d/17ycFmwHW0ZOH2hnUEeQaWHM-446sZ-t-/view?usp=sharing"
           target="blank"
           className="ml-5 border-2 border-stone-800 dark:border-gray-300 rounded-lg py-3 px-6 hover:bg-black hover:text-white"
         >

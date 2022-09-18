@@ -23,7 +23,7 @@ const ProjectDetails = () => {
         initial="hidden"
         whileInView="show"
         transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="text-5xl font-semibold mb-8"
+        className="text-5xl font-semibold mb-8 transition-all"
       >
         {projectId}
       </motion.h1>
@@ -31,7 +31,7 @@ const ProjectDetails = () => {
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="my-8 text-lg leading-loose w-full md:max-w-[60%]"
+        className="my-8 text-lg leading-loose w-full md:max-w-[60%] transition-all"
       >
         {project[0].explanation}
       </motion.p>
@@ -41,7 +41,7 @@ const ProjectDetails = () => {
             initial={{ translateY: 50, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-            className="text-xl font-semibold"
+            className="text-xl font-semibold transition-all"
           >
             Stack
           </motion.h2>
@@ -58,7 +58,7 @@ const ProjectDetails = () => {
             initial={{ translateY: 50, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-xl font-semibold"
+            className="text-xl font-semibold transition-all"
           >
             Links
           </motion.h2>
@@ -81,7 +81,7 @@ const ProjectDetails = () => {
         initial="hidden"
         whileInView="show"
         transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="overflow-hidden h-[10%] mx-auto"
+        className="overflow-hidden h-[10%] mx-auto transition-all"
       >
         <ImgWithFallback
           fallback={project[0].pngscreenshot}
@@ -95,7 +95,7 @@ const ProjectDetails = () => {
         initial="hidden"
         whileInView="show"
         transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="overflow-hidden h-[10%] mx-auto mt-16"
+        className="overflow-hidden h-[10%] mx-auto mt-16 transition-all"
       >
         <ImgWithFallback
           fallback={project[0].pngscreenshot2}
@@ -110,7 +110,7 @@ const ProjectDetails = () => {
         initial="hidden"
         whileInView="show"
         transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="mt-8 text-5xl font-semibold"
+        className="mt-8 text-5xl font-semibold transition-all"
       >
         Web Stack And Explanation
       </motion.h2>
@@ -118,7 +118,7 @@ const ProjectDetails = () => {
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="mt-8 text-lg leading-loose w-full md:max-w-[60%]"
+        className="mt-8 text-lg leading-loose w-full md:max-w-[60%] transition-all"
       >
         {project[0]["web_stack"]}
       </motion.p>
@@ -128,7 +128,7 @@ const ProjectDetails = () => {
         initial="hidden"
         whileInView="show"
         transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="mt-8 text-5xl font-semibold"
+        className="mt-8 text-5xl font-semibold transition-all"
       >
         Lessons Learned
       </motion.h2>
@@ -136,7 +136,7 @@ const ProjectDetails = () => {
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="mt-8 text-lg w-full md:max-w-[60%] leading-loose"
+        className="mt-8 text-lg w-full md:max-w-[60%] leading-loose transition-all"
       >
         {project[0]["lessons"]}
       </motion.p>
@@ -146,7 +146,7 @@ const ProjectDetails = () => {
         initial="hidden"
         whileInView="show"
         transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="mt-8 text-5xl font-semibold"
+        className="mt-8 text-5xl font-semibold transition-all"
       >
         Other Projects
       </motion.h2>

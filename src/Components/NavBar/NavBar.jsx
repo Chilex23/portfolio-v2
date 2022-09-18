@@ -30,7 +30,7 @@ const NavBar = () => {
             animate={{ y: 0 }}
             src={logo}
             alt="Logo"
-            className="w-16 h-16 rounded-full"
+            className="w-16 h-16 rounded-full transition-all"
           />
         </Link>
         <div
@@ -43,7 +43,7 @@ const NavBar = () => {
               animate={{ opacity: [0, 0, 1] }}
               transition={{ duration: 0.5 }}
             >
-              <BsSun className="text-2xl dark:text-white" />
+              <BsSun className="text-2xl dark:text-white transition-all" />
             </motion.div>
           ) : (
             <motion.div
@@ -51,7 +51,7 @@ const NavBar = () => {
               animate={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
             >
-              <BsMoon className="text-2xl dark:text-white" />
+              <BsMoon className="text-2xl dark:text-white transition-all" />
             </motion.div>
           )}
         </div>

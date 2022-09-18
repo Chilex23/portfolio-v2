@@ -7,7 +7,7 @@ const Education = () => (
       initial={{ translateX: -100, opacity: 0 }}
       whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-      className="text-5xl font-semibold relative"
+      className="text-5xl font-semibold relative transition-all"
     >
       Education
     </motion.h1>
@@ -15,7 +15,7 @@ const Education = () => (
       initial={{ translateY: 100, opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-      className="mt-10"
+      className="mt-10 transition-all"
     >
       These are some of the places where I have honed my skills.
     </motion.p>
@@ -23,7 +23,7 @@ const Education = () => (
       initial={{ translateY: 100, opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-      className="mt-10 border-l-2 border-black dark:border-gray-300 px-8 w-full md:max-w-[80%]"
+      className="mt-10 border-l-2 border-black dark:border-gray-300 px-8 w-full md:max-w-[80%] transition-all"
     >
       <div className="relative before:content-[''] before:absolute before:-left-[3.4rem] before:-top-2 before:w-10 before:h-10 before:rounded-full before:bg-black before:dark:bg-gray-300 mb-10">
         <div className="md:flex items-center justify-between">

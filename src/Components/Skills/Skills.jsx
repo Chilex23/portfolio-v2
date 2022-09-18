@@ -38,7 +38,7 @@ const Skills = () => (
       initial={{ translateX: -100, opacity: 0 }}
       whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
-      className="text-5xl font-semibold"
+      className="text-5xl font-semibold transition-all"
     >
       What I do and Skills
     </motion.h1>
@@ -46,7 +46,7 @@ const Skills = () => (
       initial={{ translateY: 100, opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
-      className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
+      className="my-6 text-lg w-full md:max-w-[70%] leading-loose transition-all"
     >
       I've gained a solid understanding of computer science and web development
       concepts by taking online courses like{" "}
@@ -72,7 +72,7 @@ const Skills = () => (
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 0.5, ease: [.31,.1,.66,.66] }}
-      className="flex mt-8 flex-wrap w-full md:max-w-[70%] gap-5"
+      className="flex mt-8 flex-wrap w-full md:max-w-[70%] gap-5 transition-all"
     >
       {skills.map((skill, index) => (
         <SkillItem
