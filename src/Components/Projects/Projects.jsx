@@ -20,7 +20,7 @@ const Projects = () => (
       initial={{ translateX: -100, opacity: 0 }}
       whileInView={{ translateX: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [0.31, 0.1, 0.66, 0.66] }}
-      className="text-5xl font-semibold transition-all"
+      className="text-5xl font-semibold"
     >
       Projects
     </motion.h1>
@@ -28,7 +28,7 @@ const Projects = () => (
       initial={{ translateY: 100, opacity: 0 }}
       whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-      className="my-6 text-lg w-full md:max-w-[70%] leading-loose transition-all"
+      className="my-6 text-lg w-full md:max-w-[70%] leading-loose"
     >
       I like to stay busy to improve my skills and always have a project in the
       works. Take a look at some of the applications I have built.
@@ -37,7 +37,7 @@ const Projects = () => (
       variants={container}
       initial="hidden"
       whileInView="show"
-      className="grid md:grid-cols-2 gap-24 mt-20 transition-all"
+      className="grid md:grid-cols-2 gap-24 mt-20"
     >
       {projects.map(({ title, desc, webpscreenshot, pngscreenshot }, i) => (
         <ProjectCard

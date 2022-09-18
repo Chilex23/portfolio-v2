@@ -6,13 +6,13 @@ const About = () => (
     initial={{ translateY: 100, opacity: 0 }}
     whileInView={{ opacity: 1, translateY: 0 }}
     transition={{ duration: 0.5, ease: [.31,.1,.66,.66] }}
-    className="mx-5 sm:mx-20 mt-[10rem] transition-all"
+    className="mx-5 sm:mx-20 mt-[10rem]"
   >
     <motion.h1
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: [.31,.1,.66,.66] }}
-      className="text-5xl font-semibold relative z-[1000] transition-all"
+      className="text-5xl font-semibold relative z-[1000]"
     >
       About Me
     </motion.h1>

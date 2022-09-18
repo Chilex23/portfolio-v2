@@ -4,7 +4,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ title, desc, webpPic, pngPic }) => (
-  <motion.div initial={{translateY: 100 }} whileInView={{translateY: 0}} className="overflow-hidden transition-all">
+  <motion.div initial={{translateY: 100 }} whileInView={{translateY: 0}} className="overflow-hidden">
     <figure className="hover:scale-105 transition-all rounded-lg overflow-hidden">
       <img src={webpPic ? webpPic : pngPic} alt="project" />
 

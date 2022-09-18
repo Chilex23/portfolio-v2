@@ -6,7 +6,7 @@ const SkillCard = ({ title, icon, delay }) => (
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ delay: 0.2 * delay, duration: 0.6 }}
-    className="w-fit p-2 md:p-4 border-stone-800 dark:border-gray-300 rounded-md border-2 group hover:bg-black hover:border-white hover:text-white cursor-pointer transition-all"
+    className="w-fit p-2 md:p-4 border-stone-800 dark:border-gray-300 rounded-md border-2 group hover:bg-black hover:border-white hover:text-white cursor-pointer"
   >
     <div className="flex justify-center">
       <span className="text-4xl">{icon}</span>

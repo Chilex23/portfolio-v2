@@ -30,7 +30,7 @@ const NavBar = () => {
             animate={{ y: 0 }}
             src={logo}
             alt="Logo"
-            className="w-16 h-16 rounded-full transition-all"
+            className="w-16 h-16 rounded-full"
           />
         </Link>
         <div
