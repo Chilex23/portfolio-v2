@@ -19,8 +19,7 @@ const CTA = () => (
       >
         <h1>Hello 👋,</h1>
         <p>
-          I'm <span className="heading">Onumaegbu Chima</span>, based in Lagos,
-          Nigeria.
+          I'm <span className="heading">Onumaegbu Chima</span>, Software Engineer.
         </p>
         <p>I build things for the web.</p>
       </motion.div>
