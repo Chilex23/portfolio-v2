@@ -15,7 +15,7 @@ const CTA = () => (
         initial={{ translateY: 40, opacity: 0 }}
         animate={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.31, 0.1, 0.66, 0.66] }}
-        className="w-full md:w-[80%] overflow-hidden pt-10"
+        className="w-full md:w-[80%] overflow-hidden pt-10 leading-[4rem]"
       >
         <h1>Hello 👋,</h1>
         <p>

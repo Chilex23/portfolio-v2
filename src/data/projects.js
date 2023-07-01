@@ -28,6 +28,9 @@ import triviawebp2 from "../assets/images/optimized/trivia_webp_2.webp";
 import triviapng from "../assets/images/trivia.png";
 import triviapng2 from "../assets/images/trivia-2.png";
 
+import foodiepng from "../assets/images/foodie.png";
+import foodiepng2 from "../assets/images/foodie-1.png";
+
 const projects = [
   {
     title: "Fyyur",
@@ -87,6 +90,24 @@ const projects = [
     pngscreenshot2: techstackpng2,
     liveLink: "https://chilex23.pythonanywhere.com/",
     githubLink: "https://github.com/Chilex23/Techstack"
+  },
+
+  {
+    title: "Foodie App",
+    desc: "A food ordering app where users can order food and pay at the comfort of their homes.",
+    stack: ["HTML and TailwindCSS", "React", "NodeJS(Express)", "MongoDB", "JWT authentication"],
+    explanation:
+      "Foodie App is a web app for ordering food. Users can order and track their previous orders and food consumption. This was a side project I decided to work on as wanted to try to create a very detailed dashboard where users can track their food intake.",
+    web_stack:
+      "I used CSS with the Tailwind utility library for styling the UI, and React to impement the view of the app. MongoDB was used to store the app's data because of it's flexibilty. NodeJS was used with the Express framework to create the backend.",
+    lessons:
+      "I learnt how to authorize users using JWT authorization tokens. I also solidified my knowledge in NodeJS and MongoDB.",
+    webpscreenshot: foodiepng,
+    webpscreenshot2: foodiepng2,
+    pngscreenshot: foodiepng,
+    pngscreenshot2: foodiepng2,
+    liveLink: "https://foodie-order-app-client.netlify.app/",
+    githubLink: "https://github.com/Chilex23/Order_App"
   },
 
   {
