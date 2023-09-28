@@ -52,7 +52,7 @@ const projects = [
     webpscreenshot2: fyyurwebp2,
     pngscreenshot: fyyurpng,
     pngscreenshot2: fyyurpng2,
-    liveLink: "https://fyyurbook.herokuapp.com/",
+    liveLink: "https://fyyur-book.onrender.com",
     githubLink: "https://github.com/Chilex23/Fyyur"
   },
 
