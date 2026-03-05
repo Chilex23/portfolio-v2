@@ -17,7 +17,7 @@ const About = () => (
       About Me
     </motion.h1>
     <p className="mt-8 text-lg leading-loose w-full md:max-w-[70%]">
-      I had a background in data analysis as a Reservoir Analyst Intern, this
+      I had a background in data analysis as an Operations Intern at TSL (Transport Services Limited), this
       experience developed my passion for software development with a keen
       interest in web development. I love creating scalable and visually
       appealing web applications.

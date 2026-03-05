@@ -29,40 +29,54 @@ const Experience = () => (
       <div className="relative before:content-[''] before:absolute before:-left-[3.4rem] before:-top-2 before:w-10 before:h-10 before:rounded-full before:bg-black before:dark:bg-gray-300 mb-10">
         <div className="md:flex items-center justify-between">
           <h2 className="font-medium text-xl">
-            Sofware Developer Intern at XPC Quantum Private Limited.{" "}
+            Operations Intern at Transport Services Limited.{" "}
           </h2>
-          <span>JULY 2021 - JAN 2022</span>
+          <span>NOV 2024 - NOV 2025</span>
         </div>
         <ul className="mt-5 list-disc leading-loose">
           <li>
-            Designed and developed a landing page for a woman's rights NGO that
-            was able to increase their awareness among their end users.
+            Sanitized and reconciled telematics data from MiX Telematics with
+            operational records.
           </li>
-          <li>
-            Implemented a Solana wallet adapter interface a minting site that
-            allowed users to see all the crypto holdings and NFTs from all their
-            various wallets.
-          </li>
-          <li>Implemented Restful API server for Car rental Application.</li>
+          <li>Developed a tracking program to monitor field assets.</li>
         </ul>
       </div>
 
       <div className="relative before:content-[''] before:absolute before:-left-[3.4rem] before:-top-2 before:w-10 before:h-10 before:rounded-full before:bg-black before:dark:bg-gray-300 mb-10">
         <div className="md:flex items-center justify-between">
-          <h2 className="font-medium text-xl">
-            Reservoir Analyst Intern at Danco Petroleum.{" "}
-          </h2>
-          <span>JAN 2021 - JUN 2021</span>
+          <h2 className="font-medium text-xl">Freelancing (Several Roles). </h2>
+          <span>JAN 2024 - OCT 2024</span>
         </div>
 
         <ul className="mt-5 list-disc leading-loose">
           <li>
-            Modelled and visualized reservoir data using Python and Tableau that
-            was able to increase the ease of finding relevant information.
+            During this period of time, I worked on Getrolla
+            <a
+              href={`https://getrolla.com/`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" hover:border-black hover:dark:border-gray-300 inline-block mx-2"
+            >
+              (https://getrolla.com/)
+            </a>
+            for an independent agency from Canada, delivering a payment platform
+            that allows remote workers access opportunities from different firms
+            and access relocation opportunities from different agencies and
+            access to USD accounts, Built UI components using ReactJS and
+            Tailwind CSS.
           </li>
           <li>
-            Performed quality control for geodetic data for validation of
-            coordinates from Drilling Location Requests.
+            Worked and collaborated on full-stack web projects with final-year
+            computer-science students in different Nigerian universities. The
+            projects can be found here{" "}
+            <a
+              href={`https://gitlab.com/onumaegbuchilex`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" hover:border-black hover:dark:border-gray-300 inline-block mx-2"
+            >
+              https://gitlab.com/onumaegbuchilex
+            </a>
           </li>
         </ul>
       </div>

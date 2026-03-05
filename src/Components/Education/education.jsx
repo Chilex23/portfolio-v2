@@ -67,7 +67,7 @@ const Education = () => (
           <h2 className="font-medium text-xl">
             FEDERAL UNIVERSITY OF TECHNOLOGY, OWERRI, IMO STATE, NIGERIA.{" "}
           </h2>
-          <span>JAN 2018 - FEB 2022</span>
+          <span>JAN 2018 - NOV 2023</span>
         </div>
 
         <ul className="mt-5 list-disc">

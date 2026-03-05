@@ -21,7 +21,7 @@ const Contact = () => (
       </p>
       <div className="flex">
         <a
-          href="mailto: onumaegbuchilex@gmail.com"
+          href="mailto: onumaegbuchima3 @gmail.com"
           target="blank"
           className="border-2 border-stone-800 dark:border-gray-300 rounded-lg py-3 px-6 hover:bg-black hover:text-white"
         >
